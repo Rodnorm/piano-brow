@@ -6,6 +6,9 @@ function App() {
   return (
     <div className="App">
       <Scale />
+      <div>
+        <p>Built with love (and React) by Rodrigo Normando</p>
+      </div>
     </div>
   );
 }

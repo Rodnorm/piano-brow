@@ -145,7 +145,6 @@ function Scale(props) {
     let scale = useRef(null);
 
     const play = (e, releaseMe) => {
-        debugger
         for (let i = 0; i < scale.current.children.length; i++ ) {
             if (scale.current.children[i].id.split('-')[1] === e.key) {
                 if (releaseMe) {
@@ -181,7 +180,6 @@ function Scale(props) {
     useEffect(() =>  {
         document.addEventListener('keydown', play);
         document.addEventListener('keyup', releaseNote);
-
     });
     
     return (

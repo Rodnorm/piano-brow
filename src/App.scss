@@ -1,6 +1,41 @@
+#root {
+  height: 100vh;
+  background: #324376;
+}
+
 .App {
-  background-color: #324376;
   display: flex;
   justify-content: center;
-  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  color: #fff;
+  letter-spacing: 1px;
+  position: relative;
+  &:after, &:before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: #f00;
+      display: flex;
+      border-radius: 18px 18px 0 0;
+      position: absolute;
+      right: -31px;
+      top: 29px;
+      left: 50%;
+  }
+  &:before {
+      content: "";
+      transform: rotate(46deg);
+      right: -45px;
+      left: calc(50% + 14px);
+      top: 31px;
+  }
+  &:after {
+      content: "";
+      transform: rotate(-44deg);
+      height: 33px;
+  }
 }
